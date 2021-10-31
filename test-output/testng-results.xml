@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="32255" started-at="2021-10-30T17:49:52 IST" finished-at="2021-10-30T17:50:24 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="32255" started-at="2021-10-30T17:49:52 IST" finished-at="2021-10-30T17:50:24 IST">
+      <class name="com.selenium.VerifyBrokenLinks">
+        <test-method status="PASS" signature="verifyLinks()[pri:0, instance:com.selenium.VerifyBrokenLinks@27f723]" name="verifyLinks" duration-ms="32186" started-at="2021-10-30T17:49:52 IST" finished-at="2021-10-30T17:50:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLinks -->
+      </class> <!-- com.selenium.VerifyBrokenLinks -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
