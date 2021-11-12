@@ -3,10 +3,12 @@ package com.selenium;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class MouseActions {
 
@@ -14,7 +16,7 @@ public class MouseActions {
 		System.setProperty("webdriver.chrome.driver",
 				"./chromedriver.exe");
 
-		WebDriver driver = new ChromeDriver();
+		ChromeDriver driver = new ChromeDriver();
 
 		driver.manage().window().maximize();
 
@@ -30,7 +32,7 @@ public class MouseActions {
 		
 		Actions act=new Actions(driver);
 		
-		/*//Drag and Drop Method1
+		//Drag and Drop Method1
 		
 		WebElement dragable = driver.findElement(By.id("draggable"));
 		WebElement dropable = driver.findElement(By.id("droppable"));
@@ -39,7 +41,9 @@ public class MouseActions {
 		//Drag and Drop Method2
 		
 		act.clickAndHold(dragable).moveToElement(dropable).release().build().perform();
-		*/
+		act.sendKeys(Keys.PAGE_UP);
+		
+		Keys.chord(Keys.CONTROL,Keys.RETURN);
 		
 		//Mouse Movement
 		

@@ -64,6 +64,14 @@ public class VerifyBrokenLinks {
 		
 		for (int j = 0; j < activeLinks.size(); j++) {
 			
+			//This is one way
+			
+			/*String attribute = activeLinks.get(j).getAttribute("href");
+			URL url = new URL(attribute);
+			HttpURLConnection connect=(HttpURLConnection)url.openConnection();*/
+		
+			
+			
 			HttpURLConnection connection=(HttpURLConnection)new URL(activeLinks.get(j).getAttribute("href")).openConnection();
 			connection.connect();
 			String responseMessage = connection.getResponseMessage();

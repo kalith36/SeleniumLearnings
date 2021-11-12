@@ -7,14 +7,17 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WindowhandleAndAlert{
 
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",
-				"./chromedriver.exe");
+				"./chromedriver_new.exe");
 
 		WebDriver driver = new ChromeDriver();
 
@@ -26,14 +29,17 @@ public class WindowhandleAndAlert{
 		
 		driver.get("http://leaftaps.com/crmsfa/control/mergeLeadsForm");
 		//Login
-		driver.findElement(By.name("USERNAME")).sendKeys("DemoSalesmanager");
+		driver.findElement(By.name("USERNAME")).sendKeys(Keys.RETURN);
 		driver.findElement(By.name("PASSWORD")).sendKeys("crmsfa");
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
+		
+		WebDriverWait wait = new WebDriverWait(driver,4);
 		
 		//Handle windows1
 		
 		driver.findElement(By.xpath("//span[text()='From Lead']/../following-sibling::td/a/img")).click();
 		Set<String> allWindows = driver.getWindowHandles();
+		
 		List<String> allList = new ArrayList();
 		allList.addAll(allWindows);
 		driver.switchTo().window(allList.get(1));
