@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.selenium.VerifyBrokenLinks">
+      <class name="com.mani.qa.DemoBlazeSignUPValidations">
         <methods>
-          <include name="verifyLinks"/>
+          <include name="setUp"/>
+          <include name="validateAddToCartTest"/>
         </methods>
-      </class> <!-- com.selenium.VerifyBrokenLinks -->
+      </class> <!-- com.mani.qa.DemoBlazeSignUPValidations -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

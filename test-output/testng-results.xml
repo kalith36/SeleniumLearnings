@@ -2,16 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32255" started-at="2021-10-30T17:49:52 IST" finished-at="2021-10-30T17:50:24 IST">
+  <suite name="Default suite" duration-ms="26056" started-at="2021-11-16T22:22:53 IST" finished-at="2021-11-16T22:23:19 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32255" started-at="2021-10-30T17:49:52 IST" finished-at="2021-10-30T17:50:24 IST">
-      <class name="com.selenium.VerifyBrokenLinks">
-        <test-method status="PASS" signature="verifyLinks()[pri:0, instance:com.selenium.VerifyBrokenLinks@27f723]" name="verifyLinks" duration-ms="32186" started-at="2021-10-30T17:49:52 IST" finished-at="2021-10-30T17:50:24 IST">
+    <test name="Default test" duration-ms="26056" started-at="2021-11-16T22:22:53 IST" finished-at="2021-11-16T22:23:19 IST">
+      <class name="com.mani.qa.DemoBlazeSignUPValidations">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mani.qa.DemoBlazeSignUPValidations@1a15ff]" name="setUp" is-config="true" duration-ms="23272" started-at="2021-11-16T22:22:53 IST" finished-at="2021-11-16T22:23:16 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLinks -->
-      </class> <!-- com.selenium.VerifyBrokenLinks -->
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validatePurchaseTest()[pri:0, instance:com.mani.qa.DemoBlazeSignUPValidations@1a15ff]" name="validatePurchaseTest" duration-ms="2673" started-at="2021-11-16T22:23:16 IST" finished-at="2021-11-16T22:23:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePurchaseTest -->
+      </class> <!-- com.mani.qa.DemoBlazeSignUPValidations -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -56,6 +56,7 @@ public class ExtentreportUtility extends ScreenShotConcept{
 	}
 
 
+	@SuppressWarnings("deprecation")
 	@BeforeMethod
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver","./chromedriver_new.exe");

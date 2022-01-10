@@ -11,7 +11,7 @@ public class LoginTest extends ExtentreportUtility{
 	@Test(priority=1)
 	public void loginTest()
 	{
-		driver.findElement(By.id("username")).sendKeys("DemoSalesmanager");
+		driver.findElement(By.id("username")).sendKeys("DemoSalesManager");;
 		driver.findElement(By.id("password")).sendKeys("crmsfa");
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
 	}
